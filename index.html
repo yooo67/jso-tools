@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JSO Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>JSO Tools</h1>
+
+  <section>
+    <h2>Base64 Encoder/Decoder</h2>
+    <textarea id="b64-input" placeholder="Enter text here"></textarea>
+    <button onclick="encodeBase64()">Encode</button>
+    <button onclick="decodeBase64()">Decode</button>
+    <textarea id="b64-output" readonly placeholder="Result here"></textarea>
+  </section>
+
+  <section>
+    <h2>Unix Timestamp Converter</h2>
+    <input type="number" id="timestamp-input" placeholder="Enter timestamp" />
+    <button onclick="convertTimestamp()">Convert</button>
+    <p id="timestamp-result"></p>
+  </section>
+
+  <section>
+    <h2>URL Encoder/Decoder</h2>
+    <textarea id="url-input" placeholder="Enter URL text"></textarea>
+    <button onclick="encodeURL()">Encode</button>
+    <button onclick="decodeURL()">Decode</button>
+    <textarea id="url-output" readonly placeholder="Result here"></textarea>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
